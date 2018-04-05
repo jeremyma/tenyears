@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title Marker animations with google
+    style
+      include ..\static\index.css
+
+    script(src="https://maps.googleapis.com/maps/api/js?v=3.exp")
+    script(src='/index.js')
+
+  body
+    div
+      h1(style='text-align:center') Ten Years
+    div(class='button-bar')
+      button#drop(onclick="drop()") Drop Markers
+      button(onclick="test()") button2
+      button button3
+    div#map-canvas
